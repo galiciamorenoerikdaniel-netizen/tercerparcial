@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos base */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* Slate 900 */
+}
+
+/* Animaciones personalizadas */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spinSlow 10s linear infinite;
+}
